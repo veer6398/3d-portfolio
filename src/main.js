@@ -1150,7 +1150,6 @@ videoTexture.flipY = false;
 
 /**  -------------------------- Model and Mesh Setup -------------------------- */
 
-// LOL DO NOT DO THIS USE A FUNCTION TO AUTOMATE THIS PROCESS HAHAHAAHAHAHAHAHAHA
 let fish;
 let coffeePosition;
 let hourHand;
@@ -1248,8 +1247,7 @@ loader.load("/models/Room_Portfolio.glb", (glb) => {
         );
         child.userData.initialRotation = new THREE.Euler().copy(child.rotation);
       }
-
-      // LOL DO NOT DO THIS USE A FUNCTION TO AUTOMATE THIS PROCESS HAHAHAAHAHAHAHAHAHA
+      
       if (child.name.includes("Hanging_Plank_1")) {
         plank1 = child;
         child.scale.set(0, 0, 1);
